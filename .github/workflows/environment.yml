@@ -26,4 +26,5 @@ jobs:
     steps:
       - run: echo '${{ env.env_var1 }}'
       - run: echo '${{ env.env_var2 }}'
+      - run: echo '${{ github.event.inputs.my_env }}'
       - run: echo '${{ vars.HOST }}'
