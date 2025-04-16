@@ -24,4 +24,3 @@ jobs:
     steps:
       - run: echo '$env.env_var1'
       - run: echo '$env.env_var2'
-  
