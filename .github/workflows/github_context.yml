@@ -24,12 +24,4 @@ jobs:
     steps:
       - run: echo "${{ github }}"
       - run: echo "${{ env.github_json }}"
-
-      # - run: echo 'GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}'
-      # - run: echo 'github.job: ${{ github.job }}'
-      # -run: |
-      #   echo 'github.repository: ${{ github.repository }}'
-      #   echo 'github.repository_owner_id: ${{ github.repository_owner_id }}'
-      #   echo 'github.repositoryUrl: ${{ github.repositoryUrl }}'
-      #   echo 'github.event.pull_request.html_url: ${{ github.event.pull_request.html_url}}'
-      #   echo "$GITHUB_CONTEXT"
+      - run: echo "${{ toJson(github) }}"
