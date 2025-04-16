@@ -28,3 +28,4 @@ jobs:
       - run: echo '${{ env.env_var2 }}'
       - run: echo '${{ github.event.inputs.my_env }}'
       - run: echo '${{ vars.HOST }}'
+      - run: echo '${{ secrets.PASSWORD }}'
