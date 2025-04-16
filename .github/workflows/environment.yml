@@ -19,8 +19,11 @@ env:
 
 # Specify a list of jobs to run
 jobs:
+
   job_1: # name of job 2
+    environment: Dev
     runs-on: ubuntu-latest
     steps:
       - run: echo '${{ env.env_var1 }}'
       - run: echo '${{ env.env_var2 }}'
+      - run: echo '${{ vars.HOST }}'
